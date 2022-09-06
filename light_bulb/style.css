@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  min-height: 100vh;
+}
+
+/* //////////////////////////adding on off toggle switch///////////////////////// */
+label {
+    
+  /* relative position to position lable in the page */
+  position: relative;
+  bottom: -300px;
+  width: 150px;
+  height: 75px;
+  background: #212121;
+  border-radius: 20px;
+}
+label span {
+  /* absolute position to move span relative to lable(ancestor)element */
+  /* designing span into toggle button */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  background: #333;
+  border: 6px solid #212121;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  /* align bulb inside span */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* style bulb inside span */
+label span ion-icon {
+  color: rgb(255, 255, 255, 0.25);
+  font-size: 30px;
+  transition: 0.5s;
+}
+/* changing icon to whitecolor with glow when checked */
+label input:checked ~ span ion-icon {
+  color: rgb(255, 255, 255, 1);
+  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 5px #fff);
+}
+label input {
+  appearance: none; /* making checkbox invisible */
+}
+label input:checked ~ span {
+    /* on clicking check box move the span inside it to move 75px */
+  left: 75px;
+}
+/* ///////////////////////visual efect 1:adding bulb///////////////////////// */
+.bulb {
+  position: absolute;
+  top: 200px;
+  background: url(off.jpg);
+  width: 348px;
+  height: 400px;
+}
+/* //////////////////////////visual efect 2:Adding background bubbles//////////////////////////////////// */
+.bubbles {
+  
+  position: absolute;
+  bottom: 0px;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 10px #ffffffed;
+  border-radius: 50%;
+  pointer-events: none;
+  /* add animation to bubbles */
+  animation: moveBubble 3.5s linear infinite;
+}
+@keyframes moveBubble {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateY(-2000%);
+  }
+}
+/*insert a content after bubble to create a white dot*/
+/* selector inserts something after the content of element */
+.bubbles::after {
+  /* content property to specify the content to insert. */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(#fff, transparent);
+  transform: scale(0.25) translate(-90%, -90%);
+}
+/* ////////////////////////////visual effect 3: adding glow text on hover///////////////////////////////////////////// */
+h2{
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(166, 161, 161);
+    letter-spacing: 5px;
+    cursor: pointer;
+    position: absolute;
+    padding: 60px;
+    top: 30px;
+}
+h2:hover{
+    color: #fff;
+    text-shadow: 0 0 10px rgb(4, 240, 252),0 0 20px rgb(31, 192, 228),
+    0 0 50px rgb(103, 240, 233),0 0 80px rgb(93, 194, 241),0 0 100px #fff;;
+}
