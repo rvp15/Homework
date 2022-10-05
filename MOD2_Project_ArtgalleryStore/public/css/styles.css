@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(226, 229, 228);
+}
+.navbaritems{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbaritems a{
+    padding: 30px;
+}
+.collectioncontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.collection-image {
+    width: 10em;
+    height: 10em;
+}
+.showart-image {
+    width: 30em;
+    height: 30em;
+}
