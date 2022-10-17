@@ -1,5 +1,6 @@
 body{
-    background-image: url(./images/back.jpg);
+    
+    background-color: #306984;
     background-repeat: no-repeat;
     background-size: 150%;
    
@@ -11,7 +12,7 @@ body{
 .playbtn{
     display: flex;
     justify-content: center;
-   padding-top: 20%;
+   padding-top: 10%;
     
 }
 
@@ -57,7 +58,7 @@ body{
   .homebtn{
     padding: 40px;
     color: rgb(234, 223, 223);
-    background:linear-gradient(to bottom, #298fb4 5%, #8ca7d9 100%);
+    background:linear-gradient(to bottom, #497784 5%, #25a7b0 100%);
     border-radius:20px;
     cursor:pointer;
     font-weight: bold;
@@ -65,11 +66,11 @@ body{
     font-size: 35px;
   }
   .homebtn:hover{
-    background:linear-gradient(to bottom, #b9bbb7 5%, #297ba1 100%);
+    background:linear-gradient(to bottom, #b9bbb7 5%,#25a7b0  100%);
     box-shadow: 3px 7px 7px 2px #363f4c;
   }
     .btn{
-     background:linear-gradient(to bottom, #298fb4 5%, #a8adba 100%);
+     background:linear-gradient(to bottom,  #497784 5%, #25a7b0 100%);
         border-radius:20px;
         cursor:pointer;
         font-size: 15px;
@@ -81,7 +82,7 @@ body{
     margin: 40px;
     }
     .btn:hover{
-        background:linear-gradient(to bottom, #b9bbb7 5%, #297ba1 100%);
-        box-shadow: 3px 7px 7px 2px #363f4c;
+        background:linear-gradient(to bottom, #b9bbb7 5%,#25a7b0 100%);
+        box-shadow: 8px 9px 7px 2px #363f4c;
     }
  
