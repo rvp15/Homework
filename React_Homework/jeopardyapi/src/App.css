@@ -1,6 +1,6 @@
 body{
     
-    background-color: #306984;
+    background-color: #586f7a;
     background-repeat: no-repeat;
     background-size: 150%;
    
@@ -23,7 +23,7 @@ body{
     position: relative;
 }
 .txt{
-    color: white;
+    color: rgb(195, 191, 191);
 }
 .displayanswer{
   padding-left: 50px;
@@ -57,8 +57,8 @@ body{
   /* //////////////////////////// */
   .homebtn{
    
-    color: rgb(234, 223, 223);
-    background:linear-gradient(to bottom, #497784 5%, #25a7b0 100%);
+    color: rgb(186, 184, 184);
+    background:linear-gradient(to bottom, #37555d 5%, #909898 100%);
     border-radius:20px;
     cursor:pointer;
     font-weight: bold;
@@ -67,11 +67,11 @@ body{
 
   }
   .homebtn:hover{
-    background:linear-gradient(to bottom, #b9bbb7 5%,#25a7b0  100%);
+    background:linear-gradient(to bottom, #909898  5%, #37555d  100%);
     box-shadow: 3px 7px 7px 2px #363f4c;
   }
     .btn{
-     background:linear-gradient(to bottom,  #497784 5%, #25a7b0 100%);
+     background:linear-gradient(to bottom, #37555d 5%, #909898 100%);
         border-radius:20px;
         cursor:pointer;
         font-size: 15px;
@@ -83,7 +83,7 @@ body{
     margin: 40px;
     }
     .btn:hover{
-        background:linear-gradient(to bottom, #b9bbb7 5%,#25a7b0 100%);
+        background:linear-gradient(to bottom, #909898  5%, #37555d 100%);
         box-shadow: 8px 9px 7px 2px #363f4c;
     }
  
